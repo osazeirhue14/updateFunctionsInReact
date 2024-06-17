@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+Phone List Application
+This application allows users to manage a list of different types of phones, including their make, year, and manufacturer. The app is built using React and demonstrates the use of state hooks and event handling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Add a phone to the list with details like type, year, and manufacturer.
+Remove a phone from the list by clicking on it.
+Code Explanation
+The main logic of the application is contained in the App component, which manages the state and handles the user interactions.
 
-## Available Scripts
+State Variables
+phone: An array that holds the list of phones.
+phoneType: A string that holds the current input value for the phone type.
+phoneYear: A number that holds the current input value for the phone year.
+phoneManufacturer: A string that holds the current input value for the phone manufacturer.
+Event Handlers
+handleAddPhone(): Adds a new phone to the list and resets the input fields.
+handleRemovePhone(index): Removes a phone from the list based on its index.
+handlePhoneTypeChange(event): Updates the phoneType state with the input value.
+handlePhoneYearChange(event): Updates the phoneYear state with the input value.
+handlePhoneManufacturerChange(event): Updates the phoneManufacturer state with the input value.
+Rendering
+The component renders a list of phones, displaying the type, year, and manufacturer for each phone.
+Input fields are provided for entering the phone details, with a button to add the phone to the list.
+Clicking on a phone in the list removes it.
+How to Use
+Enter the phone type in the "Phone Type" input field.
+Enter the year of the phone in the "Phone Year" input field.
+Enter the manufacturer of the phone in the "Phone Manufacturer" input field.
+Click the "Add Phone" button to add the phone to the list.
+The list of phones will be displayed below the input fields. Click on any phone in the list to remove it.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
