@@ -1,0 +1,95 @@
+/* Todolist.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+}
+
+.dolist {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    flex: 1;
+}
+
+.dolist h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    flex: 1;
+}
+
+.dolist input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.dolist button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dolist button:hover {
+    background-color: #45a049;
+}
+
+.dolist ol {
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+.dolist li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dolist li span {
+    flex-grow: 1;
+}
+
+.dolist li button {
+    padding: 5px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.dolist li button.up-button, .dolist li button.down-button {
+    background-color: #2196F3;
+}
+
+.dolist li button:hover {
+    background-color: #d32f2f;
+}
+
+.dolist li button.up-button:hover, .dolist li button.down-button:hover {
+    background-color: #1976d2;
+}
